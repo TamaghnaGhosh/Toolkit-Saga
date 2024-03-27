@@ -9,7 +9,7 @@ function* workGetCatsFetchSample() {
 }
 
 function* catSaga() {
-  yield takeEvery("cats/getCatchFetch", workGetCatsFetchSample);
+  yield takeEvery("cats/getCatsFetch", workGetCatsFetchSample);
 }
 
 export default catSaga;

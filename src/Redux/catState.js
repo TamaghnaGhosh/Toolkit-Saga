@@ -7,7 +7,7 @@ export const catSlice = createSlice({
     isLoading: false,
   },
   reducers: {
-    getCatchFetch: (state) => {
+    getCatsFetch: (state) => {
       state.isLoading = true;
     },
     getCatSuccess: (state, action) => {
@@ -20,7 +20,7 @@ export const catSlice = createSlice({
   },
 });
 
-export const { getCatchFetch, getCatSuccess, getCatsFailure } =
+export const { getCatsFetch, getCatSuccess, getCatsFailure } =
   catSlice.actions;
 
 export default catSlice.reducer;
